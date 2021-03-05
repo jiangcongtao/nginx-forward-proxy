@@ -1,0 +1,8 @@
+version: "2.4"
+services:
+  fwdproxy:
+    image: congtaojiang/nginx-forward-proxy:latest
+    # build: .
+    ports:
+      - 8888:8888
+      - 8443:8443
