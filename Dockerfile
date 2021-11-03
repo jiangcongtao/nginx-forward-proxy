@@ -72,6 +72,6 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositorie
             -out certs/public.pem \
             -keyout certs/private.pem \
             -subj "/C=CN/ST=SH/L=SH/O=HLT/OU=ChinaTechnology/CN=httpproxy.com"
-EXPOSE 8888 8443
+EXPOSE 8888 8080 8443
 
 CMD ["sbin/nginx", "-g", "daemon off;", "-c", "conf/nginx-proxy.conf"]
